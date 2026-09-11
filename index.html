@@ -3,352 +3,459 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070b09">
-  <meta name="description" content="Dhrubojyoti Saha — cybersecurity analyst portfolio featuring SOC investigations, ethical-hacking labs, network security, and applied research.">
-  <meta name="keywords" content="Dhrubojyoti Saha, cybersecurity analyst, SOC analyst, ethical hacking, network security, penetration testing, security research">
-  <meta property="og:title" content="Dhrubojyoti Saha — Cybersecurity Analyst">
-  <meta property="og:description" content="Signals → evidence → decisions. Explore security projects, investigations, labs, and applied research.">
+
+  <title>Dhrubojyoti Saha | Aspiring SOC Analyst</title>
+  <meta
+    name="description"
+    content="Dhrubojyoti Saha's cybersecurity portfolio: blue-team learning, Microsoft Defender XDR credentials, Cisco training, and security projects in progress."
+  >
+  <meta name="theme-color" content="#080d12">
+  <meta property="og:title" content="Dhrubojyoti Saha | Cybersecurity Portfolio">
+  <meta
+    property="og:description"
+    content="Aspiring SOC Analyst focused on defensive security, investigation, and Python automation."
+  >
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/og.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>Dhrubojyoti Saha // Cybersecurity Analyst</title>
+
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <canvas id="matrix" aria-hidden="true"></canvas>
-  <div class="scanlines" aria-hidden="true"></div>
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" aria-hidden="true"></div>
-  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="boot-screen" role="status" aria-live="polite">
-    <div class="boot-logo">DS<span>_</span></div>
-    <div class="boot-copy">
-      <p>[ OK ] Initializing portfolio kernel...</p>
-      <p>[ OK ] Loading analyst profile...</p>
-      <p>[ OK ] Mounting project evidence...</p>
-      <p>[ OK ] Starting secure workspace...</p>
-    </div>
-    <div class="boot-bar"><span></span></div>
-  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Dhrubojyoti Saha home">
+        <span class="brand-symbol">DS<span>_</span></span>
+        <span class="brand-label">SECURITY PORTFOLIO</span>
+      </a>
 
-  <header class="top-panel" data-header>
-    <a class="brand" href="#home" aria-label="Dhrubojyoti Saha home">
-      <span class="brand-icon">DS</span>
-      <span><strong>DHRUBOJYOTI@SEC-LAB</strong><small>CYBERSECURITY PORTFOLIO</small></span>
-    </a>
+      <button
+        class="menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
+        Menu
+      </button>
 
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
-      <span>MENU</span><i></i>
-    </button>
-
-    <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#investigations">Cases</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="panel-status" aria-label="System status">
-      <span><i></i> ONLINE</span>
-      <time id="clock" datetime="">00:00:00</time>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="desktop-grid" aria-hidden="true"></div>
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">ASPIRING SOC ANALYST / BLUE TEAM</p>
+        <p class="command-label">analyst@portfolio:~$ whoami</p>
 
-      <div class="hero-shell shell">
-        <div class="side-dock" aria-label="Quick links">
-          <a href="#projects" aria-label="Projects"><span>⌘</span><small>WORK</small></a>
-          <a href="#skills" aria-label="Skills"><span>◫</span><small>SKILLS</small></a>
-          <a href="#contact" aria-label="Contact"><span>@</span><small>MAIL</small></a>
+        <h1 id="hero-title">
+          Dhrubojyoti<br>
+          <span>Saha.</span>
+        </h1>
+
+        <p class="intro">
+          Building the skills to investigate suspicious activity,
+          understand security evidence, and document clear findings.
+        </p>
+
+        <p class="muted">
+          Cybersecurity training at Apponix Academy.
+          Software engineering background.
+          Focused on defensive security and Python automation.
+        </p>
+
+        <div class="actions">
+          <a class="button primary" href="#credentials">View credentials</a>
+          <a class="button secondary" href="#contact">Get in touch</a>
         </div>
 
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="status-pulse"></span> AVAILABLE FOR ENTRY-LEVEL CYBERSECURITY ROLES</div>
-          <p class="shell-command">root@portfolio:~# <span>whoami</span></p>
-          <h1 id="hero-title">DHRUBOJYOTI<br><em>SAHA</em></h1>
-          <div class="role-line">
-            <span>CYBERSECURITY ANALYST</span>
-            <span>SOC / BLUE TEAM</span>
-            <span>ETHICAL HACKING</span>
-          </div>
-          <p class="hero-summary">I investigate suspicious activity, test systems inside authorized labs, and build security projects that turn raw signals into evidence and action.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary magnetic" href="#projects"><span>Explore evidence</span><b>↘</b></a>
-            <a class="btn btn-secondary magnetic draft-link" href="#" data-label="Résumé"><span>Download résumé</span><b>↓</b></a>
-          </div>
+        <div class="hero-details">
+          <span>West Bengal, India</span>
+          <span>Interested in entry-level opportunities</span>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Interactive portfolio terminal">
+        <div class="terminal-bar">
+          <span class="terminal-dots" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </span>
+          <span>portfolio.sh</span>
+          <span class="terminal-label">INTERACTIVE</span>
         </div>
 
-        <div class="workstation reveal" data-tilt>
-          <div class="window-bar">
-            <div class="window-controls"><i></i><i></i><i></i></div>
-            <span>analyst@kali: ~/portfolio</span>
-            <b>SECURE</b>
+        <div class="terminal-content">
+          <p class="terminal-green">$ cat introduction.txt</p>
+          <p>Welcome to my security workspace.</p>
+          <p class="muted">
+            Explore my training, credentials, and current project work.
+          </p>
+
+          <div class="terminal-summary">
+            <p><span>FOCUS</span> SOC / defensive security</p>
+            <p><span>BUILDING</span> Login Threat Investigator</p>
+            <p><span>APPROACH</span> Learn · test · document</p>
           </div>
-          <div class="terminal-screen" id="terminal-output" aria-live="polite">
-            <div class="terminal-welcome">
-              <pre class="ascii-logo" aria-label="DS logo">╔══════════════╗
-║  D S // 26  ║
-╚══════════════╝</pre>
-              <p>Portfolio shell v2.0. Type <strong>help</strong> to inspect.</p>
-            </div>
-            <div class="terminal-history" id="terminal-history"></div>
-          </div>
-          <form class="terminal-input" id="terminal-form" autocomplete="off">
-            <label for="terminal-command"><span>analyst@portfolio</span>:~$</label>
-            <input id="terminal-command" name="command" type="text" spellcheck="false" aria-label="Terminal command" placeholder="help" maxlength="40">
-            <span class="terminal-caret" aria-hidden="true"></span>
+
+          <p class="muted terminal-note">
+            Type <strong>help</strong> below.
+            This terminal displays portfolio information only.
+          </p>
+
+          <div
+            id="output"
+            class="terminal-output"
+            role="log"
+            aria-live="polite"
+            aria-label="Terminal responses"
+            tabindex="0"
+          ></div>
+
+          <form id="terminal-form" class="terminal-form">
+            <label for="command">
+              <span aria-hidden="true">$</span>
+              <span class="sr-only">Portfolio command</span>
+            </label>
+
+            <input
+              id="command"
+              name="command"
+              type="text"
+              placeholder="help"
+              maxlength="40"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+            >
+
+            <button type="submit">Run</button>
           </form>
-          <div class="system-strip">
-            <div><small>CPU</small><span><i id="cpu-bar"></i></span><b id="cpu-value">24%</b></div>
-            <div><small>NET</small><span><i id="net-bar"></i></span><b id="net-value">42%</b></div>
-            <div><small>MODE</small><strong>LAB_ONLY</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">01 / ABOUT</p>
+          <h2 id="about-title">A developer's foundation.<br>A defender's focus.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="prose">
+            <p>
+              I am Dhrubojyoti Saha, an aspiring SOC analyst building
+              practical cybersecurity skills through structured training,
+              authorized labs, and software projects.
+            </p>
+            <p>
+              My Apponix Academy training includes Kali Linux,
+              Metasploit, SQL injection testing, and authentication
+              attack concepts in controlled environments.
+            </p>
+            <p>
+              I am extending that foundation into log analysis,
+              detection logic, investigation reporting, and Python
+              automation. My aim is to make each project understandable,
+              reproducible, and supported by evidence.
+            </p>
           </div>
-        </div>
-      </div>
 
-      <div class="hero-footer shell">
-        <span>SCROLL TO ENTER WORKSPACE</span><i></i>
-        <span>22.6574° N / 88.8666° E</span>
-      </div>
-    </section>
-
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="section-grid shell">
-        <div class="section-index reveal"><span>01</span><p>OPERATOR PROFILE</p></div>
-        <div class="section-heading reveal">
-          <p class="overline">PROFILE://WHOAMI</p>
-          <h2 id="about-title">CURIOUS BY NATURE.<br><em>METHODICAL BY PRACTICE.</em></h2>
-        </div>
-        <div class="about-copy reveal">
-          <p class="large-copy">I am building toward blue-team and cybersecurity analyst roles through hands-on labs, penetration-testing practice, and applied security research.</p>
-          <p>My current training includes an internship at Apponix Academy and authorized lab practice with Kali Linux, Metasploit, SQL injection testing, brute-force detection, network analysis, and security reporting.</p>
-          <p>The standard is simple: every claim should eventually connect to clean code, a sanitized screenshot, a report, or a reproducible lab.</p>
-        </div>
-        <div class="profile-console reveal">
-          <div class="profile-row"><span>EDUCATION</span><b>M.Tech — Software Engineering</b></div>
-          <div class="profile-row"><span>FOUNDATION</span><b>B.Tech — Information Technology</b></div>
-          <div class="profile-row"><span>CURRENT</span><b>Cybersecurity internship & labs</b></div>
-          <div class="profile-row"><span>TARGET</span><b>SOC / Cybersecurity Analyst</b></div>
-          <div class="profile-row"><span>LOCATION</span><b>West Bengal, India</b></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section skills" id="skills" aria-labelledby="skills-title">
-      <div class="shell">
-        <div class="section-title-row reveal">
-          <div><p class="overline">CAPABILITIES://MODULES</p><h2 id="skills-title">SECURITY<br>WORKBENCH</h2></div>
-          <p>Grouped by how the work is performed. No decorative percentage bars pretending to measure expertise.</p>
-        </div>
-
-        <div class="skill-grid">
-          <article class="skill-module reveal" data-tilt>
-            <div class="module-head"><span>MOD_01</span><b>ACTIVE</b></div>
-            <i class="module-icon">⌁</i>
-            <h3>Security operations</h3>
-            <p>Alert triage, log analysis, threat detection, investigation timelines, incident documentation.</p>
-            <ul><li>SIEM fundamentals</li><li>Sysmon & Windows events</li><li>MITRE ATT&CK mapping</li><li>Response playbooks</li></ul>
-          </article>
-          <article class="skill-module reveal" data-tilt>
-            <div class="module-head"><span>MOD_02</span><b>ACTIVE</b></div>
-            <i class="module-icon">⌬</i>
-            <h3>Network analysis</h3>
-            <p>Understand traffic, establish a baseline, isolate anomalies, and preserve the evidence path.</p>
-            <ul><li>Wireshark & PCAP</li><li>TCP/IP & DNS</li><li>Nmap enumeration</li><li>Traffic monitoring</li></ul>
-          </article>
-          <article class="skill-module reveal" data-tilt>
-            <div class="module-head"><span>MOD_03</span><b>LAB</b></div>
-            <i class="module-icon">⚿</i>
-            <h3>Ethical testing</h3>
-            <p>Authorized assessment inside controlled labs, followed by clear findings and remediation notes.</p>
-            <ul><li>Kali Linux</li><li>Burp Suite</li><li>Metasploit</li><li>SQL injection labs</li></ul>
-          </article>
-          <article class="skill-module reveal" data-tilt>
-            <div class="module-head"><span>MOD_04</span><b>BUILD</b></div>
-            <i class="module-icon">{ }</i>
-            <h3>Security engineering</h3>
-            <p>Small tools and repeatable workflows that reduce manual investigation work.</p>
-            <ul><li>Python</li><li>Bash</li><li>SQL</li><li>Git & documentation</li></ul>
-          </article>
-          <article class="skill-module callout-module reveal">
-            <p class="overline">CURRENT OBJECTIVE</p>
-            <h3>Convert practice into proof.</h3>
-            <p>Each module will link to a repository, report, or case file as the portfolio evolves.</p>
-            <a href="#projects">View project queue <span>→</span></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section projects" id="projects" aria-labelledby="projects-title">
-      <div class="shell">
-        <div class="section-title-row reveal">
-          <div><p class="overline">EVIDENCE://PROJECTS</p><h2 id="projects-title">SELECTED<br>OPERATIONS</h2></div>
-          <p>Each dossier follows the hiring-friendly sequence: problem → method → tools → outcome → lesson.</p>
-        </div>
-
-        <div class="project-list">
-          <article class="project-card reveal" data-project="soc-lab" data-tilt>
-            <div class="project-number">01</div>
-            <div class="project-copy">
-              <div class="project-labels"><span>BLUE TEAM</span><span>DETECTION</span><span>INCIDENT RESPONSE</span></div>
-              <h3>Security Operations Lab</h3>
-              <p>A controlled environment for collecting endpoint and network telemetry, writing detection logic, and practicing evidence-based response.</p>
-              <div class="project-stack"><span>Wazuh</span><span>Sysmon</span><span>Wireshark</span><span>Windows</span></div>
+          <dl class="profile-card">
+            <div>
+              <dt>Career focus</dt>
+              <dd>SOC / cybersecurity analyst</dd>
             </div>
-            <div class="project-visual visual-soc" aria-hidden="true">
-              <div class="soc-node node-source">ENDPOINTS</div><i></i><div class="soc-node node-siem">SIEM</div><i></i><div class="soc-node node-alert">ALERT</div>
-              <span class="signal signal-one"></span><span class="signal signal-two"></span>
+            <div>
+              <dt>Academic background</dt>
+              <dd>Software Engineering / Information Technology</dd>
             </div>
-            <div class="project-foot"><span><i></i> WRITE-UP IN PROGRESS</span><button type="button" data-open-project="soc-lab">OPEN DOSSIER ↗</button></div>
-          </article>
-
-
-
-          <article class="project-card future-project reveal" data-project="tracker-audit" data-tilt>
-            <div class="project-number">02</div>
-            <div class="project-copy">
-              <div class="project-labels"><span>WEB PRIVACY</span><span>THREAT INTELLIGENCE</span><span>PLANNED</span></div>
-              <h3>Web Tracker & Malware-URL Audit</h3>
-              <p>A defensive browser-analysis lab for mapping third-party requests, cookies, fingerprinting signals, suspicious redirects, and known-risk domains on authorized test targets.</p>
-              <div class="project-stack"><span>DevTools</span><span>DNS</span><span>URL reputation</span><span>Privacy audit</span></div>
+            <div>
+              <dt>Training</dt>
+              <dd>Apponix Academy</dd>
             </div>
-            <div class="project-visual tracker-visual" aria-hidden="true">
-              <div class="browser-node">TEST PAGE</div>
-              <svg viewBox="0 0 320 160" role="presentation"><path d="M58 80 C110 15 185 20 260 42 M58 80 C120 75 180 85 265 80 M58 80 C115 140 195 135 260 120"/><circle cx="58" cy="80" r="8"/><circle cx="260" cy="42" r="7"/><circle cx="265" cy="80" r="7"/><circle cx="260" cy="120" r="7"/></svg>
-              <span class="tracker-tag tag-a">3P COOKIE</span><span class="tracker-tag tag-b">BEACON</span><span class="tracker-tag tag-c">REDIRECT</span>
+            <div>
+              <dt>Practice environment</dt>
+              <dd>Kali Linux in Oracle VirtualBox</dd>
             </div>
-            <div class="project-foot"><span><i></i> PROJECT SLOT RESERVED</span><button type="button" data-open-project="tracker-audit">VIEW BLUEPRINT ↗</button></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">02 / SKILLS &amp; LEARNING</p>
+          <h2 id="skills-title">My security workbench.</h2>
+          <p>Lab experience and current learning priorities.</p>
+        </div>
+
+        <div class="cards skills-grid">
+          <article class="card">
+            <p class="card-label">AUTHORIZED LAB PRACTICE</p>
+            <h3>Security testing</h3>
+            <p>
+              Understanding attack behaviour through controlled
+              exercises and considering how defenders can identify it.
+            </p>
+            <ul class="tags" aria-label="Lab topics">
+              <li>Kali Linux</li>
+              <li>Metasploit</li>
+              <li>SQL injection</li>
+              <li>Authentication attacks</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-label">APPLIED SKILLS CREDENTIAL</p>
+            <h3>Microsoft Defender XDR</h3>
+            <p>
+              Completed the Microsoft Applied Skills assessment:
+              Defend against cyberthreats with Microsoft Defender XDR.
+            </p>
+            <ul class="tags" aria-label="Credential focus">
+              <li>Defender XDR</li>
+              <li>Defensive security</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-label">CURRENT LEARNING FOCUS</p>
+            <h3>Detection &amp; investigation</h3>
+            <p>
+              Learning to interpret authentication events, correlate
+              activity, assess false positives, and write useful findings.
+            </p>
+            <ul class="tags" aria-label="Learning topics">
+              <li>Log analysis</li>
+              <li>Alert triage</li>
+              <li>Event timelines</li>
+              <li>Security reporting</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-label">PROJECT DEVELOPMENT</p>
+            <h3>Security automation</h3>
+            <p>
+              Developing a Python log-analysis project with repeatable
+              test cases and clear documentation.
+            </p>
+            <ul class="tags" aria-label="Development focus">
+              <li>Python</li>
+              <li>Git &amp; GitHub</li>
+              <li>Testing</li>
+              <li>Documentation</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section investigations" id="investigations" aria-labelledby="cases-title">
-      <div class="shell investigation-layout">
-        <div class="sticky-title reveal">
-          <p class="overline">CASEFILES://TIMELINE</p>
-          <h2 id="cases-title">INVESTIGATION<br>REGISTER</h2>
-          <p>Simulated or lab-based cases, clearly separated from professional incident experience.</p>
+    <section class="section" id="credentials" aria-labelledby="credentials-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">03 / CREDENTIALS</p>
+          <h2 id="credentials-title">Training put into practice.</h2>
+          <p>Applied skills, career-path learning, and course completion.</p>
         </div>
 
-        <div class="case-stack">
-          <article class="case-card reveal">
-            <header><span>CASE_001</span><b class="severity high">HIGH</b><time>LAB RECORD</time></header>
-            <h3>Brute-force authentication investigation</h3>
-            <div class="case-tags"><span>MITRE T1110</span><span>WINDOWS</span><span>AUTH LOGS</span></div>
-            <ol>
-              <li><time>10:42</time><span>Repeated authentication failures identified</span></li>
-              <li><time>10:45</time><span>Source and targeted account correlated</span></li>
-              <li><time>10:53</time><span>Authentication pattern reviewed</span></li>
-              <li><time>11:10</time><span>Detection logic and response notes documented</span></li>
-            </ol>
-            <a class="draft-link" href="#" data-label="Full investigation">FULL REPORT — COMING SOON ↗</a>
+        <div class="cards credentials-grid">
+          <article class="card credential-card">
+            <div class="credential-top">
+              <span class="issuer">MICROSOFT</span>
+              <span class="badge">Applied Skills</span>
+            </div>
+
+            <h3>
+              Defend against cyberthreats with Microsoft Defender XDR
+            </h3>
+
+            <p>
+              Microsoft Applied Skills credential earned by completing
+              its assessment requirements.
+            </p>
+
+            <p class="credential-date">
+              Earned <time datetime="2026-09-10">10 September 2026</time>
+            </p>
+
+            <a
+              class="text-link"
+              href="https://learn.microsoft.com/en-us/users/dhrubojyotisaha-0812/credentials/7069a608c30da268"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Microsoft credential <span aria-hidden="true">↗</span>
+            </a>
           </article>
 
-          <article class="case-card reveal">
-            <header><span>CASE_002</span><b class="severity high">HIGH</b><time>DRAFT</time></header>
-            <h3>Suspicious PowerShell execution</h3>
-            <div class="case-tags"><span>MITRE T1059.001</span><span>WINDOWS</span><span>SYSMON</span></div>
-            <p>Planned case study: process lineage, encoded-command review, event correlation, and containment recommendation.</p>
-            <a class="draft-link" href="#" data-label="PowerShell case file">CASE FILE — PENDING ↗</a>
+          <article class="card credential-card">
+            <div class="credential-top">
+              <span class="issuer">CISCO</span>
+              <span class="badge">Career-path badge</span>
+            </div>
+
+            <h3>Junior Cybersecurity Analyst Career Path</h3>
+
+            <p>
+              Completed Cisco's Junior Cybersecurity Analyst Career Path.
+              The associated digital badge is available on Credly.
+            </p>
+
+            <a
+              class="text-link"
+              href="https://www.credly.com/badges/c6b2cec7-fc95-4aa7-b5d1-0a5f90dffe51/linked_in_profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View badge on Credly <span aria-hidden="true">↗</span>
+            </a>
           </article>
 
-          <article class="case-card reveal">
-            <header><span>CASE_003</span><b class="severity medium">MEDIUM</b><time>DRAFT</time></header>
-            <h3>Network reconnaissance analysis</h3>
-            <div class="case-tags"><span>MITRE T1046</span><span>PCAP</span><span>NMAP</span></div>
-            <p>Planned case study: baseline comparison, scan-pattern identification, source attribution, and defensive recommendations.</p>
-            <a class="draft-link" href="#" data-label="Reconnaissance case file">CASE FILE — PENDING ↗</a>
+          <article class="card credential-card">
+            <div class="credential-top">
+              <span class="issuer">CISCO</span>
+              <span class="badge">Course completion</span>
+            </div>
+
+            <h3>Introduction to Cybersecurity</h3>
+
+            <p>
+              Completed through the Cisco Networking Academy program.
+            </p>
+
+            <p class="credential-date">
+              Completed <time datetime="2026-09-09">9 September 2026</time>
+            </p>
+
+            <p class="certificate-id">
+              Certificate ID:
+              <span>ee8dc7bd-8735-44f6-9918-960a7770e57c</span>
+            </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section lab-map" aria-labelledby="lab-title">
-      <div class="shell">
-        <div class="section-title-row reveal">
-          <div><p class="overline">HOME_LAB://TOPOLOGY</p><h2 id="lab-title">DETECTION<br>PIPELINE</h2></div>
-          <p>A visual map of the controlled practice environment. Animated packets are decorative; the architecture is the useful part.</p>
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">04 / PROJECTS</p>
+          <h2 id="projects-title">Building practical evidence.</h2>
+          <p>
+            Current work is in progress. Completed code, test results,
+            and investigation reports will be linked when ready.
+          </p>
         </div>
 
-        <div class="topology reveal">
-          <div class="topology-grid" aria-hidden="true"></div>
-          <div class="topology-stage sources"><small>01 / SOURCES</small><span>WINDOWS VM</span><span>LINUX VM</span><span>TEST TRAFFIC</span></div>
-          <div class="topology-link link-one" aria-hidden="true"><i></i><i></i></div>
-          <div class="topology-stage collect"><small>02 / COLLECT</small><strong>SIEM</strong><span>INGEST · PARSE · CORRELATE</span></div>
-          <div class="topology-link link-two" aria-hidden="true"><i></i></div>
-          <div class="topology-stage respond"><small>03 / RESPOND</small><span>ALERT</span><span>INVESTIGATE</span><span>DOCUMENT</span></div>
-          <div class="topology-readout"><span>CONTROLLED LAB</span><span>NO PRODUCTION TARGETS</span><span>DEFENSIVE LEARNING</span></div>
+        <article class="featured-project">
+          <div>
+            <span class="badge">In progress</span>
+            <h3>Login Threat Investigator</h3>
+            <p>
+              A Python project for investigating authentication logs
+              and identifying suspicious login patterns.
+            </p>
+            <ul class="project-goals">
+              <li>Parse clearly labelled sample authentication events.</li>
+              <li>Identify repeated failures within a configurable time window.</li>
+              <li>Correlate subsequent successful logins for investigation.</li>
+              <li>Generate evidence summaries and test benign activity.</li>
+            </ul>
+            <ul class="tags" aria-label="Planned project technologies">
+              <li>Python</li>
+              <li>Authentication logs</li>
+              <li>Detection logic</li>
+              <li>Test cases</li>
+            </ul>
+          </div>
+
+          <div class="project-note">
+            <p class="card-label">DEVELOPMENT STATUS</p>
+            <p class="project-status">In progress<span>_</span></p>
+            <p>
+              These are the intended capabilities.
+              No production deployment or measured detection
+              performance is claimed.
+            </p>
+          </div>
+        </article>
+
+        <div class="development-note">
+          <div>
+            <h3>Earlier development work</h3>
+            <p>
+              My GitHub also contains academic and web-development
+              projects that form part of my software background.
+            </p>
+          </div>
+          <a
+            class="button secondary"
+            href="https://github.com/Dhrubojyoti-Saha?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Browse repositories
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section proof" aria-labelledby="proof-title">
-      <div class="shell proof-layout reveal">
-        <div>
-          <p class="overline">PROOF_QUEUE://NEXT</p>
-          <h2 id="proof-title">LINKS WILL<br>TURN CLAIMS<br>INTO EVIDENCE.</h2>
-          <p>The interface is ready. These items will be connected after you provide the final URLs.</p>
-        </div>
-        <ol>
-          <li><span>01</span><p>GitHub profile and project repositories</p><b>PENDING</b></li>
-          <li><span>02</span><p>Internship and course certificates</p><b>PENDING</b></li>
-          <li><span>03</span><p>Résumé PDF and LinkedIn profile</p><b>PENDING</b></li>
-          <li><span>04</span><p>Sanitized reports, screenshots, and write-ups</p><b>PENDING</b></li>
-          <li><span>05</span><p>Tracker-audit project repository</p><b>PLANNED</b></li>
-        </ol>
-      </div>
-    </section>
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="eyebrow">05 / CONTACT</p>
+        <h2 id="contact-title">Let's discuss the next opportunity.</h2>
+        <p class="contact-intro">
+          Interested in entry-level SOC and cybersecurity analyst roles,
+          internships, and opportunities to develop practical defensive
+          security skills.
+        </p>
 
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="contact-grid shell reveal">
-        <p class="overline">CONTACT://OPEN_CHANNEL</p>
-        <h2 id="contact-title">LET’S TURN<br>SIGNALS INTO<br><em>A DECISION.</em></h2>
-        <p>Open to entry-level opportunities across SOC operations, cybersecurity analysis, network security, and junior security engineering.</p>
-        <div class="contact-actions">
-          <a class="btn btn-primary magnetic draft-link" href="#" data-label="Email"><span>Send email</span><b>↗</b></a>
-          <a class="btn btn-secondary magnetic draft-link" href="#" data-label="LinkedIn"><span>LinkedIn</span><b>↗</b></a>
-          <a class="btn btn-secondary magnetic draft-link" href="#" data-label="GitHub"><span>GitHub</span><b>↗</b></a>
+        <div class="actions">
+          <a class="button primary" href="mailto:dhrubosh@gmail.com">
+            Email me
+          </a>
+          <a
+            class="button secondary"
+            href="https://www.linkedin.com/in/dhrubojyoti-saha-88821a241/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            class="button secondary"
+            href="https://github.com/Dhrubojyoti-Saha"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </div>
-        <div class="contact-orbit" aria-hidden="true"><span>DS</span><i></i><i></i><i></i></div>
+
+        <a class="email-address" href="mailto:dhrubosh@gmail.com">
+          dhrubosh@gmail.com
+        </a>
       </div>
     </section>
   </main>
 
-  <footer class="footer shell">
-    <div><strong>DHRUBOJYOTI SAHA</strong><span>CYBERSECURITY ANALYST</span></div>
-    <p>AUTHORIZED LABS · DEFENSIVE RESEARCH · RESPONSIBLE DISCLOSURE</p>
-    <a href="#home">RETURN TO ROOT ↑</a>
+  <footer class="container site-footer">
+    <p>© <span id="year">2026</span> Dhrubojyoti Saha</p>
+    <p>Authorized practice. Clear evidence. Continuous learning.</p>
+    <a href="#home">Back to top ↑</a>
   </footer>
-
-  <dialog class="project-dialog" id="project-dialog">
-    <div class="dialog-bar"><span id="dialog-code">PROJECT DOSSIER</span><button type="button" id="dialog-close" aria-label="Close project details">CLOSE ×</button></div>
-    <div class="dialog-content">
-      <p class="overline" id="dialog-label">PROJECT</p>
-      <h2 id="dialog-title">Project title</h2>
-      <p class="dialog-thesis" id="dialog-thesis"></p>
-      <div class="dialog-section"><span>01</span><div><h3>Problem</h3><p id="dialog-problem"></p></div></div>
-      <div class="dialog-section"><span>02</span><div><h3>Method</h3><p id="dialog-method"></p></div></div>
-      <div class="dialog-section"><span>03</span><div><h3>Evidence status</h3><p id="dialog-status"></p></div></div>
-      <div class="dialog-actions"><a class="btn btn-primary draft-link" href="#" data-label="Project repository">Repository ↗</a><a class="btn btn-secondary draft-link" href="#" data-label="Project report">Technical report ↗</a></div>
-    </div>
-  </dialog>
-
-  <div class="toast" role="status" aria-live="polite">
-    <span>LINK_RESERVED</span><p id="toast-message">This link will be connected in the final content pass.</p>
-  </div>
-
-  <script src="js/script.js" defer></script>
 </body>
 </html>
